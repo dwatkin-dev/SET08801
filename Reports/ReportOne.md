@@ -7,7 +7,22 @@ The aim of this assignment is to create a fun website, showcasing my proficiency
 
 In the spirit of the assignment, I will be aiming to code everything from scratch and avoiding the use of any frameworks or no standard APIs.
 
-> Insert previously written introduction section here: On another machine but not committed.
+Having recently been working through The C# Player's Guide by RB Whitaker, I immediately decided what my website would be. In the C# Players guide, one of the coding exercises is to make a dungeon crawler loosely based on the 1973 game Hunt the Rumpus by Gregory Yob. I decided this type of game would be a perfect fit for this assignment.
+
+Unfortunately, although I knew what I wanted to create and how I was going to implement it on a technical scale, I am not a particularly imaginative or creative person. Therefore I decided to enlist the use of ChatGPT to assist with the creative content of the website using the following prompt:
+
+> During the following interaction I do not want you to provide any code snippets or blocks for the implementation of what is discussed. The output should be conceptual ideas only. If the idea requires none standard features of a programming language you should identify the feature to me for further research independently.
+
+> The languages concerned with this discussion are HTML, CSS and JavaScript. I want to create a small website which will be a dungeon crawler type game based on Find the Rumpus. The dungeon will contain 16 rooms, a four by four grids, with each room being a operate HTML page. Navigation will be via hyperlinks on each page with North, South, East and West directions. Directions to rooms outside the grid will not be available options, for instance the bottom left corner will only have North and West as options. The control of navigation and senses to adjacent rooms will be manually handled in the HTML document, not dynamically done with JavaScript. Only the interactions within rooms will be coded with JavaScript.
+
+> The theme will be about the World Wide Web and the languages used to implement it, HTML, CSS and JavaScript. I would like you to provide a background story and overall objective based on the theme. I would like content for each room type (not all rooms need to be occupied), maybe some sort of event or a monster fight or any other idea you have as long as it is possible to implement in JavaScript as a beginner. I plan on using session Storage for items or player states that can be tracked throughout the game.
+
+> Please provide detailed flavor text for the various rooms, including a few varieties for empty rooms and a good introduction page explaining the story and what the user needs to do.
+
+> Also provide a suggested layout that would make the game challenging but not impossible.
+
+
+This took more than a few tweaks and revisions to get something I was happy with. The full answer provided by ChatGPT is included at the end of this report for full Transparency regarding AI usage in the execution of this assignment.
 
 This report details the first stages of the assignment and will deal with explaining and expanding on my idea and the plan for the initial development of the website with HTML and CSS. The JavaScript elements will be discussed but final execution may differ from what is defined here.
 
