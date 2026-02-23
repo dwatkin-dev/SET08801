@@ -9,7 +9,7 @@ In the spirit of the assignment, I will be aiming to code everything from scratc
 
 > Insert previously written introduction section here: On another machine but not committed.
 
-This report details the first stages of the assignment and will deal with explaining and expanding on my idea and the initial development of the website with HTM and CSS. The JavaScript elements will be discussed but final execution may differ from what is defined here.
+This report details the first stages of the assignment and will deal with explaining and expanding on my idea and the plan for the initial development of the website with HTML and CSS. The JavaScript elements will be discussed but final execution may differ from what is defined here.
 
 ## Website Layout Overview
 
@@ -23,11 +23,19 @@ The homepage will have a single link to the entrance of the game and from there 
 
 ## Homepage Layout Overview
 
+The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. When resized the blocks will shrink up till a lower limit which will be defined at build stage, at which point side scrolling will come into play. There will also be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without head turning.
+
+The intention is a responsive design viewable on a range of devices, from and ultrawide desktop to a mobile screen.
+
+> Figure Two - Homepage Wireframe at various resolutions
+
 ## Dungeon Room Layout Overview
+
+
 
 ## Initial JavaScript Requirements
 
-As per the introduction, this report details the first stages of the assignment and will deal with explaining and expanding on my idea and the initial development of the website with HTM and CSS. However, to plan and execute the idea, I am required to think ahead and ensure what I would like to achieve is possible.
+As per the introduction, this report details the first stages of the assignment and will deal with explaining and expanding on my idea and the initial development of the website with HTML and CSS. However, to plan and execute the idea, I am required to think ahead and ensure what I would like to achieve is possible.
 
 Once I had decided on the multipage website arrangement being driven via hyperlinks, I soon realised that although this simplifies the JavaScript element of the assignment a bit (although there should still be more than enough to demonstrate proficiency), it creates its own issue. For my website to work, it will need to hold data relating to player and game status. I was not sure how this was handled but some google investigation led me to the localStorage and sessionStorage JavaScript APIs. I have not defined the usage of these APIs yet, only confirmed their existence and investigated what each provides. Based on my research it would seem sessionStorage best suits my use case as there is no requirement to save status throughout multiple sessions due to the games small size.
 
