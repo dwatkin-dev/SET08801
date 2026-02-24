@@ -6,7 +6,7 @@ This repository contains my coursework for the Web Technologies module, part of 
 - Features and requirements analysis
 - Design documentation and implementation plan
 - Initial site layout built with HTML and CSS
-- Accompanying report covering the above - [Report One](./Reports/ReportOne.md)
+- Accompanying report covering the above - [Report One](./reports/ReportOne.md)
 
 ## Part 2 – Final Implementation & Reflection
 - Completion of the site using JavaScript for interactivity
