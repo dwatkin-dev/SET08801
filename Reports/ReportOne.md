@@ -24,7 +24,9 @@ Unfortunately, although I knew what I wanted to create and how I was going to im
 
 This took more than a few tweaks and revisions to get something I was happy with. The full answer provided by ChatGPT is included at the end of this report for full Transparency regarding AI usage in the execution of this assignment.
 
-This report details the first stages of the assignment and will deal with explaining and expanding on my idea and the plan for the initial development of the website with HTML and CSS. The JavaScript elements will be discussed but final execution may differ from what is defined here.
+This report details the first stages of the assignment and will deal with explaining and expanding on my idea and the plan for the initial development of the website with HTML and CSS. Final execution may differ from what is defined here.
+
+This report will not include any detailed content or JavaScript development as these will form stage 2 of the project and will be detailed in its associated report. However, some initial considerations have been considered to ensure the projects feasability and have been recorded within this report.
 
 ## Website Layout Overview
 
@@ -34,22 +36,36 @@ I decided to split the game map into 16 separate pages with navigation through h
 
 The homepage will have a single link to the entrance of the game and from there each page will link to its adjacent rooms/pages. As the layout is in a grid, edge cases will only contain relevant navigation options. For example, you will not be able to travel west from a room/page on the left edge of the grid.
 
-> Figure One - Site Map
+![Figure One - Site Map](./images/sitemap.png)
 
-![Figure One - Site Map](./Images/sitemap.png)
+> Figure One - Site Map
 
 ## Homepage Layout Overview
 
-The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. When resized the blocks will shrink up till a lower limit which will be defined at build stage, at which point side scrolling will come into play. There will also be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without head turning.
+The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
 
 The intention is a responsive design viewable on a range of devices, from and ultrawide desktop to a mobile screen.
 
-> Figure Two - Homepage Wireframe at various resolutions
+![Figure Two - Homepage Wireframe](./images/homepage_wireframe.png)
+
+> Figure Two - Homepage Wireframe
 
 ## Dungeon Room Layout Overview
 
+Each dungeon room will follow the same layout template. A header block and below that the screen is split into 3 sections. The right of the screen there is a full length aside which will contain any states related to the game that are going to be held in sessionStorage (e.g. player health). The left side will contain the main contents relating to the room which will be text or interactive JavaScript and below this the navigation bar will be placed with buttons appropriate to the travel options as per the site map.
+
+As with the homepage, these will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
+
+The page will be responsive for smaller screens with the intention of the states bar moving from the right vertical to a horizontal style above the main content.
+
+My current intention is that the bulk of the page will be arranged using CCS grid with the status rotation handled via CSS flex.
+
+![Figure Three - Dungeon Room Wireframe](./images/room_wireframe.png)
+
+> Figure Three - Dungeon Room Wireframe
 
 ## Design Guidelines
+
 
 
 ## Initial JavaScript Requirements
@@ -58,7 +74,7 @@ As per the introduction, this report details the first stages of the assignment 
 
 Once I had decided on the multipage website arrangement being driven via hyperlinks, I soon realised that although this simplifies the JavaScript element of the assignment a bit (although there should still be more than enough to demonstrate proficiency), it creates its own issue. For my website to work, it will need to hold data relating to player and game status. I was not sure how this was handled but some google investigation led me to the localStorage and sessionStorage JavaScript APIs. I have not defined the usage of these APIs yet, only confirmed their existence and investigated what each provides. Based on my research it would seem sessionStorage best suits my use case as there is no requirement to save status throughout multiple sessions due to the games small size.
 
-## Software Usage
+## Software
 
 This assignment has been produced using Phoenix Code. It is a web development specific text editor with live preview and git integration. I have found it easy and enjoyable to use and would recommend to others.
 
