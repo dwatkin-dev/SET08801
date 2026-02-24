@@ -36,6 +36,8 @@ The homepage will have a single link to the entrance of the game and from there 
 
 > Figure One - Site Map
 
+![Figure One - Site Map](./Images/sitemap.png)
+
 ## Homepage Layout Overview
 
 The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. When resized the blocks will shrink up till a lower limit which will be defined at build stage, at which point side scrolling will come into play. There will also be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without head turning.
@@ -61,5 +63,9 @@ Once I had decided on the multipage website arrangement being driven via hyperli
 This assignment has been produced using Phoenix Code. It is a web development specific text editor with live preview and git integration. I have found it easy and enjoyable to use and would recommend to others.
 
 [Phoenix Code](https://phcode.io/)
+
+Whimsical was used to produce the wireframes, sitemap and gnatt charts used in this report
+
+[Whimsical](https://whimsical.com/)
 
 ## Reference Materials
