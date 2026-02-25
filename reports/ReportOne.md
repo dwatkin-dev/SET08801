@@ -66,7 +66,46 @@ My current intention is that the bulk of the page will be arranged using CCS gri
 
 ## Design Guidelines
 
+As the website is based on an old 1970's CLI game and is themed around web development languages, I will be aiming for a style terminal style somewhere between a Linux CLI and a modern IDE or text editor.
 
+I have looked at a number of sites with this in mind and included links below for reference.
+
+For the colour scheme I decided to simplify the choice by using a colour set from the windows command prompt as it would suit the terminal style I am aiming for. I decided to go with the One Half Dark scheme as it is what I personnaly use day to day.
+
+![Figure Four - On Half Dark Colour Scheme](./images/one_half_dark.png)
+
+> Figure Four - On Half Dark Colour Scheme
+
+This has the folowing colour options for use in the design:
+
+| Description | Colour Code |
+| --- | --- |
+| Foreground | #DCDFE4 |
+| Background | #282C34 |
+| Black | #5A6374 |
+| Red | #E06C75 |
+| Green | #98C379 |
+| Yellow | #E5C07B |
+| Blue | #61AFEF |
+| Purple | #C678DD |
+| Cyan | #56B6C2 |
+| White | #DCDFE4 |
+
+The foreground colour will be used for the majority of text with accented aspects using colours from the other available options.
+
+The website font will be monospace type and in order to try and cater for as many devices as possible I will be using the following:
+
+![Consolas Font](./images/consolas.png)
+
+Consolas - primary font, should be safe for nearly all Microsoft systems.
+
+![Monaco Font](./images/monaco.png)
+
+Monaco - first fallback, should capture macOS systems.
+
+![Courier New Font](./images/courier.png)
+
+Courier New - final fallback, is the monospace standard font and should be safe for everythign the others miss.
 
 ## Initial JavaScript Requirements
 
