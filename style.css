@@ -1,0 +1,27 @@
+body {
+    background-color:#282C34;
+    color: #DCDFE4;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+}
+
+header, main, nav, footer {
+    border: 2px outset #5A6374;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+.myButton {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px outset rgb(90, 99, 116);
+    display: inline-block;
+}
+
