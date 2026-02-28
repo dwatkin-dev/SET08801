@@ -42,7 +42,7 @@ The homepage will have a single link to the entrance of the game and from there 
 
 ## Homepage Layout Overview
 
-The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
+The homepage will be a simple single column page with 3 rows. A header block, main content block and a navigation block. These will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width of 800 pixels defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
 
 The intention is a responsive design viewable on a range of devices, from and ultrawide desktop to a mobile screen.
 
@@ -54,7 +54,7 @@ The intention is a responsive design viewable on a range of devices, from and ul
 
 Each dungeon room will follow the same layout template. A header block and below that the screen is split into 3 sections. The right of the screen there is a full length aside which will contain any states related to the game that are going to be held in sessionStorage (e.g. player health). The left side will contain the main contents relating to the room which will be text or interactive JavaScript and below this the navigation bar will be placed with buttons appropriate to the travel options as per the site map.
 
-As with the homepage, these will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
+As with the homepage, these will be top aligned with whitespace below the navigation when additional vertical space is available. There will be a maximum width of 800 pixels defined to account for widescreen monitors and keep the content in the centre of the screen and easily readable without unsightly horizontal spread.
 
 The page will be responsive for smaller screens with the intention of the states bar moving from the right vertical to a horizontal style above the main content.
 
@@ -91,6 +91,10 @@ This has the folowing colour options for use in the design:
 | Cyan | #56B6C2 |
 | White | #DCDFE4 |
 
+The background will be #282c34 and any background accents will be based on the shades and tints of this colour as per the color-hex.com website:
+
+[#282c34 on www.color-hex.com](https://www.color-hex.com/color/282c34)
+
 The foreground colour will be used for the majority of text with accented aspects using colours from the other available options.
 
 The website font will be monospace type and in order to try and cater for as many devices as possible I will be using the following:
@@ -124,3 +128,17 @@ Whimsical was used to produce the wireframes, sitemap and gnatt charts used in t
 [Whimsical](https://whimsical.com/)
 
 ## Reference Materials
+
+This section contains various linked sites I viewed in coming up with the design aspects of the website and a little bit about what I liked and used form each site.
+
+[ForrestKnight Web Terminal Portfolio](https://terminal.fkcodes.com/)
+
+I liked the terminal design of this website, it was along the lines of what I wanted but a little too simplistic for my aims. I did used the text blur effect found on the 'help' text of this site but with more blur added. I also wanted to use the ASCII art header idea from this and RichardApps website but after some experimentation, it wasn't really compatable with the responsive design I wanted.
+
+[RichardApps Portfolio](https://www.richardapps.net/#home)
+
+I loved this website and took big inspiration from it in terms of how I laid my pages out witht he dotted border boxes. Again I liked the ASCII art title style.
+
+[ShellFolio Portfolio](https://evilprince2009.netlify.app/)
+
+This site is where I got the idea for the boxshadow without a solid border for the box structure elements of my site.

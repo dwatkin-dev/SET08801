@@ -1,27 +1,32 @@
 body {
     background-color:#282C34;
     color: #DCDFE4;
-    font-family: Consolas, Monaco, 'Courier New', monospace;
+    text-shadow: 0 0 30px #DCDFE4;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    box-shadow: 0 0 10px #939599;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 1100px
 }
 
-header, main, nav, footer {
-    border: 2px outset #5A6374;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-header, nav, footer {
+nav, footer {
     text-align: center;
 }
 
-.myButton {
+main {
+    padding: 30px 0;
+}
+
+.MyButton {
     font-size: 20px;
     line-height: 20px;
-    padding: 5px;
+    padding: 10px 20px;
     border-radius: 5px;
-    border: 2px outset rgb(90, 99, 116);
+    border: 2px dotted rgb(90, 99, 116);
     display: inline-block;
 }
 
+.ASCIIArt {
+    line-height: 0;
+}
