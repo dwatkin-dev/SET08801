@@ -95,21 +95,19 @@ The background will be #282c34 and any background accents will be based on the s
 
 [#282c34 on www.color-hex.com](https://www.color-hex.com/color/282c34)
 
-The foreground colour will be used for the majority of text with accented aspects using colours from the other available options.
+The foreground colour will be used for the majority of text with accented aspects using colours from the other available options. Like a CLI game, I will attempt to tie the colours to different meanings:
+
+- Red = danger and corruption
+- Green = healing and system stability
+- Blue = system concepts and web structure items
+- Purple = mystery or unknown items
+- Yellow = warnings and objectives
 
 The website font will be monospace type and in order to try and cater for as many devices as possible I will be using the following:
 
-![Consolas Font](./images/consolas.png)
+Fira Code - Used by a lot of IDEs and editors, a nice clean monospaced font. This will be embeded via Google Fonts.
 
-Consolas - primary font, should be safe for nearly all Microsoft systems.
-
-![Monaco Font](./images/monaco.png)
-
-Monaco - first fallback, should capture macOS systems.
-
-![Courier New Font](./images/courier.png)
-
-Courier New - final fallback, is the monospace standard font and should be safe for everythign the others miss.
+Courier New - Fallback, is the monospace standard font and should be safe for everythign the others miss.
 
 ## Initial JavaScript Requirements
 

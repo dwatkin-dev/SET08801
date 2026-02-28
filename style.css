@@ -14,10 +14,6 @@ nav, footer {
     text-align: center;
 }
 
-main {
-    padding: 30px 0;
-}
-
 .MyButton {
     font-size: 20px;
     line-height: 20px;
@@ -27,6 +23,4 @@ main {
     display: inline-block;
 }
 
-.ASCIIArt {
-    line-height: 0;
-}
+
