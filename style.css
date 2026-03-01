@@ -1,6 +1,6 @@
 body {
     background-color: #1e2635;
-    color: #faeed2;
+    color: #f7efab;
     font-family: "Fira Code", "Courier New", monospace;
     font-size: 14px;
     padding: 10px 40px;
@@ -32,7 +32,7 @@ h2 {
     padding: 0;
     margin: 0;
     font-size: 18px;
-    color: #9dd2e9;
+    color: #bbc7d8;
 }
 
 ul,
@@ -67,9 +67,9 @@ a:active {
 }
 
 section {
-    border: 5px solid #faeed2;
+    border: 5px solid #f7efab;
     border-radius: 5px;
-    box-shadow: 0 0 5px #faeed2;
+    box-shadow: 0 0 5px #f7efab;
 }
 
 .sectionHead {
