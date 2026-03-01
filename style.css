@@ -1,6 +1,6 @@
 body {
     background-color: #1e2635;
-    color: #f7efab;
+    color: #DCDFE4;
     font-family: "Fira Code", "Courier New", monospace;
     font-size: 14px;
     padding: 10px 40px;
@@ -67,9 +67,9 @@ a:active {
 }
 
 section {
-    border: 5px solid #f7efab;
+    border: 3px solid #DCDFE4;
     border-radius: 5px;
-    box-shadow: 0 0 5px #f7efab;
+    box-shadow: 0 0 5px #DCDFE4;
 }
 
 .sectionHead {
