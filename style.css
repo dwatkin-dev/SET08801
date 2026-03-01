@@ -41,7 +41,7 @@ li {
 }
 
 a {
-    background-color: #fda34b;
+    background-color: #cd6f18;
     border: 2px solid #1e2635;
     color: #1e2635;
     font-size: 18px;
@@ -53,10 +53,10 @@ a {
 }
 
 a:hover {
-    border: 2px solid #fda34b;
-    box-shadow: 0 0 10px 0 #fda34b;
+    border: 2px solid #cd6f18;
+    box-shadow: 0 0 10px 0 #cd6f18;
     background-color: #1e2635;
-    color: #fda34b;
+    color: #cd6f18;
 }
 
 a:active {
