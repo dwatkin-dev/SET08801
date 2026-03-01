@@ -1,7 +1,7 @@
 body {
-    background-color:#1e2635;
-    color: #DCDFE4;
-    font-family: 'Fira Code', 'Courier New', monospace;
+    background-color: #1e2635;
+    color: #faeed2;
+    font-family: "Fira Code", "Courier New", monospace;
     font-size: 14px;
     padding: 10px 40px;
     margin: 20px auto;
@@ -16,23 +16,62 @@ nav {
     margin: 15px;
 }
 
-nav, footer {
+nav,
+footer {
     text-align: center;
 }
 
-h1, h2 {
+footer {
+    color: #343b49;
+}
+
+h1,
+h2 {
     padding: 0;
     margin: 0;
     font-size: 18px;
+    color: #9dd2e9;
+}
+
+ul,
+li {
+    padding-left: 15px;
+}
+
+a {
+    background-color: #fda34b;
+    border: 2px solid #1e2635;
+    color: #1e2635;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 2px solid #fda34b;
+    box-shadow: 0 0 10px 0 #fda34b;
+    background-color: #1e2635;
+    color: #fda34b;
+}
+
+a:active {
+    border: 2px solid #1e2635;
+    box-shadow: 0 0 0 0 #fda34b;
+    background-color: #fda34b;
+    color: #1e2635;
 }
 
 section {
-    border: 5px solid #DCDFE4;
-    border-radius: 2px;
+    border: 5px solid #faeed2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #faeed2;
 }
 
 .sectionHead {
-    background-color: #343B49;
+    background-color: #343b49;
     padding: 15px;
 }
 
@@ -46,16 +85,53 @@ section {
     gap: 10px;
 }
 
-
-.myButton {
-    background-color: #fda34b;
-    color: #1e2635;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
+.danger {
+    color: #e06c75;
+    font-weight: bold;
 }
 
+.wumpus {
+    font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 0 0 8px #e06c75;
+    letter-spacing: 1px;
+    animation: flicker 2s infinite alternate;
+}
 
+.safety {
+    color: #98c379;
+    font-weight: bold;
+}
+
+.structure {
+    color: #61afef;
+    font-style: italic;
+}
+
+.mystery {
+    color: #c678dd;
+    text-shadow: 0 0 5px #c678dd;
+}
+
+.warning {
+    color: #e5c07b;
+}
+
+@keyframes flicker {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    22%,
+    24%,
+    55% {
+        opacity: 0.5;
+    }
+}
