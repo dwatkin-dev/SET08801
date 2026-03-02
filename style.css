@@ -78,11 +78,16 @@ section {
     border: 3px solid #DCDFE4;
     border-radius: 5px;
     box-shadow: 0 0 5px #DCDFE4;
+    height: 350px;
 }
 
-.sectionHead {
+.sectionHead, .mainSectionHead {
     background-color: #343b49;
     padding: 15px;
+}
+
+.mainSectionBody {
+    padding: 30px 15px;
 }
 
 .sectionBody {
@@ -93,6 +98,10 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+}
+
+.mainSection {
+    height: 500px
 }
 
 .danger {
@@ -131,6 +140,33 @@ section {
 .wumpusImage{
     animation: flicker 2s infinite alternate;
 }
+
+.typewriter {
+    width: fit-content;
+    border-right: 2px solid #DCDFE4;
+    animation: typewriter 4s steps(70) normal, blinkCursor 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 485px;
+    }
+}
+
+@keyframes blinkCursor {
+    0% {
+        border-right-color:  #DCDFE4;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
 @keyframes flicker {
     0%,
     19%,
