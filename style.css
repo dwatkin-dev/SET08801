@@ -42,7 +42,7 @@ li {
 
 a {
     background-color: #cd6f18;
-    border: 2px solid #1e2635;
+    border: 2px solid #8d2c07;
     color: #1e2635;
     font-size: 18px;
     font-weight: bold;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 a:active {
-    border: 2px solid #1e2635;
+    border: 2px solid #8d2c07;
     box-shadow: 0 0 0 0 #fda34b;
     background-color: #fda34b;
     color: #1e2635;
@@ -93,9 +93,10 @@ section {
 }
 
 .wumpus {
+    color: #cd6f18;
     font-weight: bolder;
     font-size: 22px;
-    text-shadow: 0 0 8px #e06c75;
+    text-shadow: 0 0 8px #8d2c07;
     letter-spacing: 1px;
     animation: flicker 2s infinite alternate;
 }
