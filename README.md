@@ -2,6 +2,8 @@
 
 This repository contains my coursework for the Web Technologies module, part of my BSc Computing degree. The assessment is split into two parts, each designed to demonstrate my understanding of client‑side web development using HTML, CSS, and JavaScript.
 
+Website can be found here: [CodeQuest](https://dwatkin-dev.github.io/SET08801/)
+
 ## Part 1 – Analysis, Design & Initial Implementation
 - Features and requirements analysis
 - Design documentation and implementation plan
