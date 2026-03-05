@@ -150,4 +150,15 @@ This site is where I got the idea for the box shadow rather than just a solid bo
 
 ## Planning
 
+With the remaining 8 weeks I have on this project, I plan on trying to concentrate on a different JS aspect each week. Once these are complete I will look at maybe moving the page around as discussed earlier. I would like to ensure I have a functioning page before I begin preferential redesign though.
 
+The rough plan is as follows:
+
+Week 1 - 13th March - Work on getting sessionStorage working for player health, inventory and game state.
+Week 2 - 20th March - Mechanics of the power surge room and the recursion rooms.
+Week 3 - 27th March - Complete the Wumpus engagement.
+Week 4 - 03rd April - Web Core room and Win/Lose conditions.
+Week 5 - 10th April - Testing and bug fixing.
+Week 6 - 17th April - Any potential redesign, additional features I decide upon.
+Week 7 - 24th April - Final testing and begin second report.
+Week 8 - 01st May   - Complete report, produce video and submit.
