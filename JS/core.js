@@ -2,7 +2,7 @@
 
 export function initGame() {
     if(!sessionStorage.getItem("initialised")) {
-        sessionStorage.setItem("health", 20);
+        sessionStorage.setItem("health", 40);
         sessionStorage.setItem("initialised", true);
     }
 }
@@ -16,6 +16,6 @@ export function setHealth(value) {
 }
 
 export function getHealth() {
-    sessionStorage.getItem("health");
+    return sessionStorage.getItem("health");
 }
 
