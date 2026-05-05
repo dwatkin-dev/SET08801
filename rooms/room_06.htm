@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+
+        <script type="module" src="../JS/core.js"></script>
+        <script type="module" src="../JS/test.js" defer></script>
+
+        <title>The Glitched Labyrinth</title>
+    </head>
+    <body>
+        <header>
+            <img src="../images/header.png" />
+            <img class="wumpusImage" src="../images/wumpus_core.png" />
+        </header>
+
+        <main>
+            <section class="mainSection">
+                <div class="mainSectionHead">
+                    <h2>[ Voltage Spike ]</h2>
+                </div>
+                <div class="mainSectionBody">
+                    <p>Arcs of energy leap between the walls.</p>
+
+                    <p>Your vision flickers.</p>
+
+                    <p>A Power Surge strikes you.</p>
+                </div>
+            </section>
+
+            <nav>
+                <a href="./room_10.htm" class="directionButton">NORTH</a>
+                <a href="./room_07.htm" class="directionButton">EAST</a>
+                <a href="./room_02.htm" class="directionButton">SOUTH</a>
+                <a href="./room_05.htm" class="directionButton">WEST</a>
+            </nav>
+
+            <div class="cards">
+                <section class="card">
+                    <div class="sectionHead">
+                        <h2>[ Senses ]</h2>
+                    </div>
+                    <div class="sectionBody">
+                        <p><span class="safety">A calm, cooling breeze carries the scent of clean code.</span></p>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="sectionHead">
+                        <h2>[ Player Status ]</h2>
+                    </div>
+                    <div class="sectionBody">
+                        <p>Health: <span id="health">20</span>/20</p>
+                        <p>Inventory: Empty</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 David Watkin</p>
+        </footer>
+    </body>
+</html>

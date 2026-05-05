@@ -1,0 +1,187 @@
+body {
+    background-color: #1e2635;
+    color: #DCDFE4;
+    font-family: "Fira Code", "Courier New", monospace;
+    font-size: 14px;
+    padding: 10px 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+}
+
+nav {
+    margin: 15px;
+}
+
+nav,
+footer {
+    text-align: center;
+}
+
+footer {
+    color: #343b49;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #bbc7d8;
+}
+
+ul,
+li {
+    padding-left: 15px;
+}
+
+a {
+    background-color: #cd6f18;
+    border: 2px solid #8d2c07;
+    color: #1e2635;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 2px solid #cd6f18;
+    box-shadow: 0 0 10px 0 #cd6f18;
+    background-color: #1e2635;
+    color: #cd6f18;
+}
+
+a:active {
+    border: 2px solid #8d2c07;
+    box-shadow: 0 0 0 0 #fda34b;
+    background-color: #fda34b;
+    color: #1e2635;
+}
+
+.debugButton {
+    width: auto;
+}
+
+.directionButton {
+    width: 100px;
+}
+
+section {
+    border: 3px solid #DCDFE4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #DCDFE4;
+    height: 350px;
+}
+
+.sectionHead, .mainSectionHead {
+    background-color: #343b49;
+    padding: 15px;
+}
+
+.mainSectionBody {
+    padding: 30px 15px;
+}
+
+.sectionBody {
+    padding: 5px 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.mainSection {
+    height: 500px
+}
+
+.danger {
+    color: #e06c75;
+    font-weight: bold;
+}
+
+.wumpus {
+    color: #cd6f18;
+    font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 0 0 8px #8d2c07;
+    letter-spacing: 1px;
+    animation: flicker 2s infinite alternate;
+}
+
+.safety {
+    color: #98c379;
+    font-weight: bold;
+}
+
+.structure {
+    color: #61afef;
+    font-style: italic;
+}
+
+.mystery {
+    color: #c678dd;
+    text-shadow: 0 0 5px #c678dd;
+}
+
+.warning {
+    color: #e5c07b;
+}
+
+.wumpusImage{
+    animation: flicker 2s infinite alternate;
+}
+
+.typewriter {
+    width: fit-content;
+    border-right: 2px solid #DCDFE4;
+    animation: typewriter 4s steps(70) normal, blinkCursor 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 485px;
+    }
+}
+
+@keyframes blinkCursor {
+    0% {
+        border-right-color:  #DCDFE4;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes flicker {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    22%,
+    24%,
+    55% {
+        opacity: 0.5;
+    }
+}
