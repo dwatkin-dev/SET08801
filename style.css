@@ -15,9 +15,20 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     border: 3px solid #dcdfe4;
     border-radius: 5px;
     box-shadow: 0 0 5px #dcdfe4;
+    min-height: 650px;
+}
+
+.mainSection {
+    flex-grow: 1;
+}
+
+.sensesSection {
+    height: 200px;
 }
 
 .sectionHead {
@@ -30,7 +41,7 @@ main {
 }
 
 nav {
-    margin: 15px 0px 30px 0px;
+    margin: 15px 0 30px 0;
 }
 
 nav,
