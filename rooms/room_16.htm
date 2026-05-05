@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="../style.css" />
 
         <script type="module" src="../JS/core.js"></script>
-        <script type="module" src="../JS/test.js" defer></script>
 
         <title>The Glitched Labyrinth</title>
     </head>
@@ -20,40 +19,37 @@
         </header>
 
         <main>
-            <section class="mainSection">
-                <div class="mainSectionHead">
+            <section>
+                <div class="sectionHead">
                     <h2>[ The Web Core ]</h2>
                 </div>
-                <div class="mainSectionBody">
+                <div class="sectionBody">
                     <p>At the center floats a radiant sphere of structured light.</p>
                 </div>
             </section>
-
-            <nav>
-                <a href="./room_12.htm" class="directionButton">SOUTH</a>
-                <a href="./room_15.htm" class="directionButton">WEST</a>
-            </nav>
-
-            <div class="cards">
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Senses ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p><span class="danger">You hear corrupted static leaking through the walls.</span></p>
-                    </div>
-                </section>
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Player Status ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p>Health: <span id="health">20</span>/20</p>
-                        <p>Inventory: Empty</p>
-                    </div>
-                </section>
-            </div>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Senses ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p><span class="danger">You hear corrupted static leaking through the walls.</span></p>
+                </div>
+            </section>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Player Status ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p>Health: <span id="health">20</span>/20</p>
+                    <p>Inventory: Empty</p>
+                </div>
+            </section>
         </main>
+
+        <nav>
+            <a href="./room_12.htm" class="directionButton">SOUTH</a>
+            <a href="./room_15.htm" class="directionButton">WEST</a>
+        </nav>
 
         <footer>
             <p>© 2026 David Watkin</p>

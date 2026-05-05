@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="../style.css" />
 
         <script type="module" src="../JS/core.js"></script>
-        <script type="module" src="../JS/test.js" defer></script>
 
         <title>The Glitched Labyrinth</title>
     </head>
@@ -20,11 +19,11 @@
         </header>
 
         <main>
-            <section class="mainSection">
-                <div class="mainSectionHead">
+            <section>
+                <div class="sectionHead">
                     <h2>[ Debug Cache ]</h2>
                 </div>
-                <div class="mainSectionBody">
+                <div class="sectionBody">
                     <p>A calm, stable chamber filled with glowing blue light.</p>
 
                     <p>You see fragments of preserved clean code.</p>
@@ -34,35 +33,32 @@
                     <p>Health restored</p>
                 </div>
             </section>
-
-            <nav>
-                <a href="./room_14.htm" class="directionButton">NORTH</a>
-                <a href="./room_11.htm" class="directionButton">EAST</a>
-                <a href="./room_06.htm" class="directionButton">SOUTH</a>
-                <a href="./room_09.htm" class="directionButton">WEST</a>
-            </nav>
-
-            <div class="cards">
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Senses ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p><span class="danger">You hear corrupted static leaking through the walls.</span></p>
-                        <p><span class="danger">The air hums with unstable energy, prickling at your skin.</span></p>
-                    </div>
-                </section>
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Player Status ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p>Health: <span id="health">20</span>/20</p>
-                        <p>Inventory: Empty</p>
-                    </div>
-                </section>
-            </div>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Senses ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p><span class="danger">You hear corrupted static leaking through the walls.</span></p>
+                    <p><span class="danger">The air hums with unstable energy, prickling at your skin.</span></p>
+                </div>
+            </section>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Player Status ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p>Health: <span id="health">20</span>/20</p>
+                    <p>Inventory: Empty</p>
+                </div>
+            </section>
         </main>
+
+        <nav>
+            <a href="./room_14.htm" class="directionButton">NORTH</a>
+            <a href="./room_11.htm" class="directionButton">EAST</a>
+            <a href="./room_06.htm" class="directionButton">SOUTH</a>
+            <a href="./room_09.htm" class="directionButton">WEST</a>
+        </nav>
 
         <footer>
             <p>© 2026 David Watkin</p>

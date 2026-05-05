@@ -1,6 +1,6 @@
 body {
     background-color: #1e2635;
-    color: #DCDFE4;
+    color: #dcdfe4;
     font-family: "Fira Code", "Courier New", monospace;
     font-size: 14px;
     padding: 10px 40px;
@@ -14,8 +14,23 @@ header {
     padding: 0 20px 20px 20px;
 }
 
+main {
+    border: 3px solid #dcdfe4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #dcdfe4;
+}
+
+.sectionHead {
+    background-color: #343b49;
+    padding: 15px;
+}
+
+.sectionBody {
+    padding: 5px 15px;
+}
+
 nav {
-    margin: 15px;
+    margin: 15px 0px 30px 0px;
 }
 
 nav,
@@ -74,36 +89,6 @@ a:active {
     width: 100px;
 }
 
-section {
-    border: 3px solid #DCDFE4;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #DCDFE4;
-    height: 350px;
-}
-
-.sectionHead, .mainSectionHead {
-    background-color: #343b49;
-    padding: 15px;
-}
-
-.mainSectionBody {
-    padding: 30px 15px;
-}
-
-.sectionBody {
-    padding: 5px 15px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.mainSection {
-    height: 500px
-}
-
 .danger {
     color: #e06c75;
     font-weight: bold;
@@ -137,14 +122,16 @@ section {
     color: #e5c07b;
 }
 
-.wumpusImage{
+.wumpusImage {
     animation: flicker 2s infinite alternate;
 }
 
 .typewriter {
     width: fit-content;
-    border-right: 2px solid #DCDFE4;
-    animation: typewriter 4s steps(70) normal, blinkCursor 1s infinite;
+    border-right: 2px solid #dcdfe4;
+    animation:
+        typewriter 4s steps(70) normal,
+        blinkCursor 1s infinite;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -160,7 +147,7 @@ section {
 
 @keyframes blinkCursor {
     0% {
-        border-right-color:  #DCDFE4;
+        border-right-color: #dcdfe4;
     }
     50% {
         border-right-color: transparent;

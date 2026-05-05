@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="../style.css" />
 
         <script type="module" src="../JS/core.js"></script>
-        <script type="module" src="../JS/test.js" defer></script>
 
         <title>The Glitched Labyrinth</title>
     </head>
@@ -20,43 +19,42 @@
         </header>
 
         <main>
-            <section class="mainSection">
-                <div class="mainSectionHead">
+            <section>
+                <div class="sectionHead">
                     <h2>[ Corridor ]</h2>
                 </div>
-                <div class="mainSectionBody">
+                <div class="sectionBody">
                     <p>You hear faint echoes of old data transmissions.</p>
                 </div>
             </section>
-
-            <nav>
-                <a href="./room_16.htm" class="directionButton">NORTH</a>
-                <a href="./room_08.htm" class="directionButton">SOUTH</a>
-                <a href="./room_11.htm" class="directionButton">WEST</a>
-            </nav>
-
-            <div class="cards">
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Senses ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p><span class="danger">A rhythmic clicking echoes endlessly, never resolving.</span></p>
-                        <p><span class="danger">The air hums with unstable energy, prickling at your skin.</span></p>
-                        <p><span class="mystery">A steady, resonant pulse radiates from ahead, drawing you forward.</span></p>
-                    </div>
-                </section>
-                <section class="card">
-                    <div class="sectionHead">
-                        <h2>[ Player Status ]</h2>
-                    </div>
-                    <div class="sectionBody">
-                        <p>Health: <span id="health">20</span>/20</p>
-                        <p>Inventory: Empty</p>
-                    </div>
-                </section>
-            </div>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Senses ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p><span class="danger">A rhythmic clicking echoes endlessly, never resolving.</span></p>
+                    <p><span class="danger">The air hums with unstable energy, prickling at your skin.</span></p>
+                    <p>
+                        <span class="mystery">A steady, resonant pulse radiates from ahead, drawing you forward.</span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="sectionHead">
+                    <h2>[ Player Status ]</h2>
+                </div>
+                <div class="sectionBody">
+                    <p>Health: <span id="health">20</span>/20</p>
+                    <p>Inventory: Empty</p>
+                </div>
+            </section>
         </main>
+
+        <nav>
+            <a href="./room_16.htm" class="directionButton">NORTH</a>
+            <a href="./room_08.htm" class="directionButton">SOUTH</a>
+            <a href="./room_11.htm" class="directionButton">WEST</a>
+        </nav>
 
         <footer>
             <p>© 2026 David Watkin</p>
