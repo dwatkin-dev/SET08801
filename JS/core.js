@@ -2,8 +2,10 @@
 
 export function updateStatus() {
     // Updates the player status
-    document.getElementById("health").textContent = getHealth();
-    document.getElementById("inventory").textContent = getInventory();
+    if (getHealth() != null && getInventory() != null) {
+        document.getElementById("health").textContent = getHealth();
+        document.getElementById("inventory").textContent = getInventory();
+    }
 }
 
 export function setHealth(value) {
@@ -17,24 +19,32 @@ export function getHealth() {
 }
 
 export function setInventory(value) {
-    // Update health value
+    // Update inventory value
     sessionStorage.setItem("inventory", value);
 }
 
 export function getInventory() {
-    // Read health value
+    // Read inventory value
     return sessionStorage.getItem("inventory");
 }
 
-// Core functions not needed in other modules
+// Reset of the game
 
-function init() {
-    setHealth(30);
-    setInventory("Nerd");
+function resetStorage() {
+    setHealth(20);
+    setInventory("Empty");
+}
+
+var resetBtn = document.getElementById("reset");
+if (resetBtn) {
+    // Stops the link from navigating until the reset has been performed
+    resetBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        resetStorage();
+
+        window.location.href = resetBtn.href;
+    });
 }
 
 // Core JS used on every page
-
-document.getElementById("initalise").onclick = init(); // Used where game reset is required
-
 updateStatus(); // Updates the status for pages that have no modules
