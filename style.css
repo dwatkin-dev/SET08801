@@ -45,7 +45,8 @@ nav {
 }
 
 nav,
-footer {
+footer,
+.button {
     text-align: center;
 }
 
@@ -66,7 +67,8 @@ li {
     padding-left: 15px;
 }
 
-a {
+a,
+button {
     background-color: #cd6f18;
     border: 2px solid #8d2c07;
     color: #1e2635;
@@ -78,21 +80,23 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+button:hover {
     border: 2px solid #cd6f18;
     box-shadow: 0 0 10px 0 #cd6f18;
     background-color: #1e2635;
     color: #cd6f18;
 }
 
-a:active {
+a:active,
+button:active {
     border: 2px solid #8d2c07;
     box-shadow: 0 0 0 0 #fda34b;
     background-color: #fda34b;
     color: #1e2635;
 }
 
-.debugButton {
+.generalButton {
     width: auto;
 }
 

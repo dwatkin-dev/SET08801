@@ -29,12 +29,23 @@ export function getInventory() {
     return sessionStorage.getItem("inventory");
 }
 
+export function updateWumpusKilled(value) {
+    // Update inventory value
+    sessionStorage.setItem("wumpusKilled", value);
+}
+
+export function getWumpusKilled() {
+    // Read inventory value
+    return sessionStorage.getItem("wumpusKilled");
+}
+
 // Code unique to this module
 
 // Reset of the game when links with the id "reset" are used.
 function resetStorage() {
     sessionStorage.setItem("health", 20);
     sessionStorage.setItem("inventory", "Empty");
+    sessionStorage.setItem("wumpusKilled", "false");
 }
 
 var resetBtn = document.getElementById("reset");
@@ -53,14 +64,13 @@ function checkForDeath() {
     console.log("are you dead?");
     if(getHealth() == 0){
         clearNav();
-        // reportGameOver();
     }
 }
 
 function clearNav() {
     document.getElementById("nav").innerHTML =
         "<p>GAME OVER!</p>" +
-        "<a href=\"./room_01.htm\" class=\"debugButton\">RESTART DEBUGGING</a>";
+        "<a href=\"./room_01.htm\" class=\"generalButton\">RESTART DEBUGGING</a>";
     resetStorage();
 }
 
