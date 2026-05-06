@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../style.css" />
 
         <script type="module" src="../JS/core.js"></script>
+        <script type="module" src="../JS/zap.js"></script>
 
         <title>The Glitched Labyrinth</title>
     </head>
@@ -29,6 +30,8 @@
                     <p>Your vision flickers.</p>
 
                     <p>A Power Surge strikes you.</p>
+
+                    <p>You take <span id="damage">0</span> damage!</p>
                 </div>
             </section>
             <section class="sensesSection">
@@ -50,7 +53,7 @@
             </section>
         </main>
 
-        <nav>
+        <nav id="nav">
             <a href="./room_10.htm" class="directionButton">NORTH</a>
             <a href="./room_07.htm" class="directionButton">EAST</a>
             <a href="./room_02.htm" class="directionButton">SOUTH</a>

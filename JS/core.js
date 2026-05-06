@@ -1,16 +1,16 @@
-// Functions to be used in page specific modules
+// Functions to be used in all modules
 
 export function updateStatus() {
     // Updates the player status
-    if (getHealth() != null && getInventory() != null) {
-        document.getElementById("health").textContent = getHealth();
-        document.getElementById("inventory").textContent = getInventory();
-    }
+    document.getElementById("health").textContent = getHealth();
+    document.getElementById("inventory").textContent = getInventory();
 }
 
-export function setHealth(value) {
+export function updateHealth(value) {
     // Update health value
     sessionStorage.setItem("health", value);
+    updateStatus(); // Update status on change
+    checkForDeath();
 }
 
 export function getHealth() {
@@ -18,9 +18,10 @@ export function getHealth() {
     return sessionStorage.getItem("health");
 }
 
-export function setInventory(value) {
+export function updateInventory(value) {
     // Update inventory value
     sessionStorage.setItem("inventory", value);
+    updateStatus(); // Update status on change
 }
 
 export function getInventory() {
@@ -28,11 +29,12 @@ export function getInventory() {
     return sessionStorage.getItem("inventory");
 }
 
-// Reset of the game
+// Code unique to this module
 
+// Reset of the game when links with the id "reset" are used.
 function resetStorage() {
-    setHealth(20);
-    setInventory("Empty");
+    sessionStorage.setItem("health", 20);
+    sessionStorage.setItem("inventory", "Empty");
 }
 
 var resetBtn = document.getElementById("reset");
@@ -46,5 +48,22 @@ if (resetBtn) {
     });
 }
 
-// Core JS used on every page
-updateStatus(); // Updates the status for pages that have no modules
+// Check for death
+function checkForDeath() {
+    console.log("are you dead?");
+    if(getHealth() == 0){
+        clearNav();
+        // reportGameOver();
+    }
+}
+
+function clearNav() {
+    document.getElementById("nav").innerHTML =
+        "<p>GAME OVER!</p>" +
+        "<a href=\"./room_01.htm\" class=\"debugButton\">RESTART DEBUGGING</a>";
+    resetStorage();
+}
+
+
+// Once all code has run update the status
+updateStatus();
