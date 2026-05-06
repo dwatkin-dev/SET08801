@@ -1,4 +1,4 @@
-import { getHealth, updateHealth, updateStatus } from "./core.js";
+import { getHealth, updateHealth } from "./core.js";
 
 // Generates a random damage amount between 1 and 10 and updates health. Informs player of damage.
 

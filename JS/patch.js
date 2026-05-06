@@ -1,4 +1,4 @@
-import { getInventory, updateInventory, updateStatus } from "./core.js";
+import { getInventory, updateInventory } from "./core.js";
 
 // Adds the patch to the players inventory on first visit. Subsequent visits change the room text.
 
