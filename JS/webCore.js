@@ -11,5 +11,10 @@ var win =
     "<p>WUMPUS.EXE: TERMINATED</p>" +
     "<p>You stand at the heart of a Network reborn. The hum of a thousand clean connections fills the silence where static once screamed.</p>" +
     "<p>You are a Debugger. You came. You fixed it. You won.</p>" +
-    '<div class="button"><button class="generalButton">[ PLAY AGAIN ]</button></div>';
+    "<div class=\"button\"><a href=\"../index.htm\" class=\"generalButton\" id=\"reset\">PLAY AGAIN</a></div>";
 
+if(getWumpusKilled() == "true") {
+    document.getElementById("coreText").innerHTML = win;
+    document.getElementById("nav").innerHTML = "";
+    document.querySelector(".generalButton").addEventListener("click", killWumpus);
+}

@@ -61,7 +61,6 @@ if (resetBtn) {
 
 // Check for death
 function checkForDeath() {
-    console.log("are you dead?");
     if(getHealth() == 0){
         clearNav();
     }
