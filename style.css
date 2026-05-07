@@ -151,6 +151,36 @@ button:active {
     overflow: hidden;
 }
 
+.ticker-tape-container {
+    overflow-x: hidden;
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+}
+
+.ticker-tape {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: normal;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @keyframes typewriter {
     from {
         width: 0;

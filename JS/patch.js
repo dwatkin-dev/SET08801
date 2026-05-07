@@ -4,7 +4,7 @@ import { getInventory, updateInventory } from "./core.js";
 
 if (getInventory() != "Empty") {
     document.getElementById("patchText").innerHTML =
-        "<p>You already downloaded the patch!</p> <p>Find and defeat the Wumpus.exe...</p>";
+        "<p>You already downloaded the <span class=\"safety\">Patch Script</span>!</p> <p>Find and defeat the <span class=\"wumpus\">Wumpus.exe</span>...</p>";
 } else {
     updateInventory("patch_v.1.0.exe");
 }
