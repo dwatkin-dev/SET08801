@@ -14,5 +14,5 @@ Website can be found here: [CodeQuest](https://dwatkin-dev.github.io/SET08801/)
 - Completion of the site using JavaScript for interactivity
 - Final implementation details
 - Reflection on the development process
-- Accompanying report
+- Accompanying report - [Report Two](./reports/ReportTwo.md)
 
